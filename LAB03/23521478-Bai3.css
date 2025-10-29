@@ -1,0 +1,180 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+/* MSSV: 23521478 Cau 3.1 */
+@font-face {
+  font-family: serif;
+  src: url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+}
+
+@font-face {
+  font-family: sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+}
+
+/* MSSV: 23521478 Cau 3.2 */
+html {
+    font-size: 62.5%;
+}
+
+body {
+  font-family: serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  word-spacing: 0.2em;
+}
+
+h1, h2 {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 3.2rem;
+  text-align: center;
+  letter-spacing: 0.15em;
+  margin: 2rem 0;
+}
+
+h2 {  
+  font-size: 2.4rem;
+  letter-spacing: 0.1em;
+  margin-top: 3rem;
+}
+
+section > p {
+  text-indent: 2rem;
+}
+
+/* MSSV: 23521478 Cau 3.3 */
+a:link, a:visited, a:hover, a:focus {
+  color: #a66;
+  text-decoration: underline;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+a:active {
+  color: #ffffff;
+    background-color: rgb(137, 62, 62); 
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+}
+
+a[href^="http"]::after {
+  content: "";
+  display: inline-block;
+  background-image: url(external-link-52.png);
+  background-size: contain;
+  width: 12px;
+  height: 12px;
+  margin-left: 4px;
+}
+
+/* MSSV: 23521478 Cau 3.4 */
+ul, ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+    line-height: 1.5; 
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ol {
+    list-style-type: lower-alpha;
+}
+
+/* MSSV: 23521478 Cau 3.5 */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+nav ul li {
+  width: 220px; 
+}
+
+nav ul a {
+  display: block;
+  width: 100%;
+  padding: 18px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #a66; 
+  background: #fff;
+  border: 2px solid rgba(167,102,102,0.35);
+  border-radius: 6px;
+  font-family: serif;
+  font-size: 20px;
+  line-height: 1;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+nav ul a:link, a:visited {
+  text-decoration: none;;
+}
+
+nav ul a:hover, nav ul a:focus {
+  background: rgba(138, 52, 52, 0.66);
+  outline: none;
+  color: #fff;
+} 
